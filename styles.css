@@ -4,3 +4,13 @@ body {
 h1 {
     color: darkblue;
 }
+a:visited {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
