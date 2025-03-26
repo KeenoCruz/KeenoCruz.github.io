@@ -1,21 +1,19 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
+  font-family: monospace;
 }
-
 .sidebar {
   background-color: black;
   margin: 0;
   padding: 0;
-  width: 40%;
+  width: 35%;
   position: fixed;
   height: 100%;
   overflow: auto;
 }
-
 .sidebar a {
   display: block;
   color: white;
@@ -24,24 +22,46 @@ body {
   text-align: center;
   font-size: 20px;
 }
-
 .sidebar a.active {
   background-color: #04AA6D;
   color: white;
 }
-
 .sidebar a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
-
 .content {
-  margin-left: 40%;
+  margin-left: 35%;
   padding: 1px 16px;
   height: 1000px;
   text-align: center;
+  font-size: larger;
 }
-
+.contdesign {
+  border: 1px solid black;
+  background-color: pink;
+  padding: 35px;
+}
+.coninfo {
+  color: white;
+  text-align: center;
+}
+.buttonresume {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.3s;
+}
+.buttonresume:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
@@ -51,10 +71,55 @@ body {
   .sidebar a {float: left;}
   .content {margin-left: 0;}
 }
-
 @media screen and (max-width: 400px) {
   .sidebar a {
     text-align: center;
     float: none;
   }
+}
+
+/*FOR SKILLS.HTML*/
+.contentskills {
+  margin-left: 35%;
+  padding: 1px 16px;
+  height: 1000px;
+  text-align: center;
+  font-size: larger;
+}
+.skillsT {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding: 30px;
+}
+.skillsS {
+  border: 1px solid black;
+  background-color: lightgreen;
+  padding: 30px;
+}
+
+.exp {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding: 30px;
+}
+
+/*FOR EDUCATION.HTML*/
+.contenteduc {
+  margin-left: 35%;
+  padding: 1px 16px;
+  height: 1000px;
+  text-align: center;
+  font-size: larger;
+}
+
+.educ {
+  border: 1px solid black;
+  background-color: lightgreen;
+  padding: 30px;
+}
+
+.achieves {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding: 30px;
 }
